@@ -39,11 +39,11 @@ jobs:
 
     # Docker build
     - name: Build Docker containers
-      run: docker-compose build
+      run: docker compose build
 
     # Run containers for testing
     - name: Run containers
-      run: docker-compose up -d
+      run: docker compose up -d
 
     - name: Stop containers
-      run: docker-compose down
+      run: docker compose down
